@@ -20,21 +20,26 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  background: var(--dark);
+  background: var(--light);
 }
 
 h2 {
-  color: var(--light);
+  color: var(--dark);
+}
+
+form {
+  width: 100%;
+  min-width: 400px;
 }
 
 .monthly-repayment {
-  color: var(--light);
+  color: var(--dark);
   font-weight: 900;
   font-size: 4rem;
 }
 
 .term-text {
-  color: white;
+  color: var(--dark);
   font-weight: 600;
 }
 
@@ -58,7 +63,8 @@ h2 {
 
 .form-text-input::placeholder,
 .form-select-input::placeholder {
-  color: rgb(255, 255, 255, 0.6);
+  /* color: rgb(255, 255, 255, 0.6); */
+  color: dark;
 }
 
 .form-text-input {
@@ -67,10 +73,11 @@ h2 {
   padding: 0 12px;
   background-color: transparent;
   outline: none;
-  color: var(--light);
+  color: var(--dark);
   font-size: 1.8rem;
   border-radius: 1000px;
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  /* border: 2px solid rgba(255, 255, 255, 0.2); */
+  border: 2px solid var(--dark);
   transition: border-color 0.2s ease-in-out;
 }
 
@@ -79,16 +86,18 @@ h2 {
   width: 100%;
   padding: 0 12px;
   outline: none;
-  color: var(--light);
+  /* color: var(--light); */
+  color: dark;
   font-size: 1.8rem;
   border-radius: 1000px;
-  background-color: var(--dark);
+  border: 2px solid var(--dark);
+  background-color: var(--light);
 }
 
 .form-select-input {
   -webkit-appearance: none;
   appearance: none;
-  background-image: url("/images/chevron-down.svg");
+  background-image: url("/images/bx-chevron-down.svg");
   background-repeat: no-repeat;
   background-size: 40px;
   background-position: calc(100% - 12px) center;
@@ -104,8 +113,8 @@ h2 {
   -webkit-appearance: none;
   width: 100%;
   height: 15px;
-  background-color: var(--dark);
-  background: rgba(255, 255, 255, 0.2);
+  background-color: var(--border-colour);
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 12px;
   outline: none;
   opacity: 0.7;
@@ -119,7 +128,7 @@ h2 {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: var(--light);
+  background: var(--dark);
   cursor: pointer;
 }
 
@@ -139,7 +148,7 @@ h2 {
 }
 
 .sliderticks span {
-  color: var(--light);
+  color: var(--darl);
   opacity: 0.6;
 }
 
