@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script defer src="main.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <div class="form-field">
+        <div class="form-input">
+          <input
+            class="form-text-input"
+            type="text"
+            id="firstname"
+            name="firstname"
+            placeholder="First Name"
+            autocomplete="given-name"
+            title="Must be letters only with two characters minimum"
+          />
+        </div>
+        <span class="error" id="firstnameerror"></span>
+      </div>
+      <div class="form-field">
+        <div class="form-input">
+          <input
+            class="form-text-input"
+            type="text"
+            id="lastname"
+            name="lastname"
+            placeholder="Last Name"
+            autocomplete="given-name"
+            title="Must be letters only with two characters minimum"
+          />
+        </div>
+        <span class="error" id="lastnameerror"></span>
+      </div>
+      <div class="form-field">
+        <div class="form-input">
+          <input
+            class="form-text-input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+            autocomplete="email"
+            title="Enter a valid email address"
+          />
+        </div>
+        <span class="error" id="emailerror"></span>
+      </div>
+      <div class="form-field">
+        <div class="form-input" id="form-select">
+          <select
+            id="amount-required"
+            name="amount-required"
+            class="form-select-input"
+          >
+            <option selected value="25000">£25,000</option>
+            <option value="30000">£30,000</option>
+            <option value="40000">£40,000</option>
+            <option value="50000">£50,000</option>
+            <option value="75000">£75,000</option>
+            <option value="100000">£100,000</option>
+            <option value="125000">£125,000</option>
+            <option value="150000">£150,000</option>
+            <option value="200000">£200,000</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-field">
+        <div class="form-input">
+          <input
+            type="range"
+            id="termslider"
+            class="slider"
+            name="temp"
+            min="3"
+            max="15"
+            list="markers"
+            step="1"
+            value="3"
+          />
+
+          <div class="sliderticks">
+            <span>|</span>
+            <span>|</span>
+            <span>|</span>
+            <span>|</span>
+            <span>|</span>
+            <span>|</span>
+            <span>|</span>
+            <span>|</span>
+            <span>|</span>
+            <span>|</span>
+            <span>|</span>
+            <span>|</span>
+            <span>|</span>
+          </div>
+        </div>
+      </div>
+    </form>
+    <p class="term-text">Loan Term:</p>
+    <h2>Monthly Repayment</h2>
+    <p class="monthly-repayment">£0.00</p>
+  </body>
+</html>

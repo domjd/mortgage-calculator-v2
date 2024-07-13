@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+:root {
+  --primary: #12f2d0;
+  --light: #eeeeee;
+  --dark: #2a2f43;
+  --border-colour: rgba(238, 238, 238, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: var(--dark);
+}
+
+h2 {
+  color: var(--light);
+}
+
+.monthly-repayment {
+  color: var(--light);
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+.term-text {
+  color: white;
+  font-weight: 600;
+}
+
+.form-field {
+  width: 100%;
+}
+
+.form-input {
+  position: relative;
+  padding: 12px;
+  width: 100%;
+}
+
+.form-input label {
+  position: absolute;
+  color: var(--light);
+  font-size: 18px;
+  top: 0;
+  left: 20px;
+}
+
+.form-text-input::placeholder,
+.form-select-input::placeholder {
+  color: rgb(255, 255, 255, 0.6);
+}
+
+.form-text-input {
+  height: 80px;
+  width: 100%;
+  padding: 0 12px;
+  background-color: transparent;
+  outline: none;
+  color: var(--light);
+  font-size: 1.8rem;
+  border-radius: 1000px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: border-color 0.2s ease-in-out;
+}
+
+.form-select-input {
+  height: 80px;
+  width: 100%;
+  padding: 0 12px;
+  outline: none;
+  color: var(--light);
+  font-size: 1.8rem;
+  border-radius: 1000px;
+  background-color: var(--dark);
+}
+
+.form-select-input {
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("/images/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: calc(100% - 12px) center;
+}
+
+.form-text-input:focus,
+.form-select-input:focus {
+  border: 2px solid var(--primary);
+}
+
+.slider {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  background-color: var(--dark);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: var(--light);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04aa6d;
+  cursor: pointer;
+}
+
+.sliderticks {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.sliderticks span {
+  color: var(--light);
+  opacity: 0.6;
+}
+
+/* .form-select-input {
+  background-color: var(--dark);
+  background: rgba(255, 255, 255, 0.2);
+  height: 60px;
+  width: 100%;
+  border-radius: 1000px;
+} */
