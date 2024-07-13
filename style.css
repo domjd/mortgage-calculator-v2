@@ -20,7 +20,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  background: var(--light);
 }
 
 h2 {
@@ -91,7 +90,7 @@ form {
   font-size: 1.8rem;
   border-radius: 1000px;
   border: 2px solid var(--dark);
-  background-color: var(--light);
+  background-color: white;
 }
 
 .form-select-input {
@@ -114,7 +113,7 @@ form {
   width: 100%;
   height: 15px;
   background-color: var(--border-colour);
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(238, 238, 238, 0.8);
   border-radius: 12px;
   outline: none;
   opacity: 0.7;
