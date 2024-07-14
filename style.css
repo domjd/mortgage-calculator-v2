@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 :root {
-  --primary: #12f2d0;
+  --primary: #8300e9;
   --light: #eeeeee;
   --dark: #2a2f43;
   --border-colour: rgba(238, 238, 238, 0.1);
@@ -126,7 +126,7 @@ form {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: var(--dark);
+  background: var(--primary);
   cursor: pointer;
 }
 
@@ -134,7 +134,7 @@ form {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: #04aa6d;
+  background: #8300e9;
   cursor: pointer;
 }
 
