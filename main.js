@@ -30,3 +30,7 @@ function calculatePayment() {
 calculatePayment();
 amountRequired.addEventListener("input", calculatePayment);
 termSlider.addEventListener("input", calculatePayment);
+
+if (window.location.hash) {
+  console.log(window.location.hash);
+}
