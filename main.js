@@ -30,5 +30,3 @@ function calculatePayment() {
 calculatePayment();
 amountRequired.addEventListener("input", calculatePayment);
 termSlider.addEventListener("input", calculatePayment);
-
-console.log(window.parent.location);
