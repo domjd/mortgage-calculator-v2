@@ -24,6 +24,8 @@ body {
 
 h2 {
   color: var(--dark);
+  font-size: 1.4rem;
+  font-weight: 800;
 }
 
 form {
@@ -38,6 +40,7 @@ form {
 
 .term-text {
   color: var(--dark);
+  font-size: 1.4rem;
   font-weight: 600;
 }
 
