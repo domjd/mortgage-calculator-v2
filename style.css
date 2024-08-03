@@ -80,14 +80,14 @@ form {
 }
 
 .form-select-input {
-  height: 80px;
+  height: 60px;
   width: 100%;
   padding: 0 12px;
   outline: none;
   /* color: var(--light); */
   color: dark;
-  font-size: 1.8rem;
-  border-radius: 1000px;
+  font-size: 1.4rem;
+  border-radius: 3px;
   border: 2px solid var(--dark);
   background-color: white;
 }
@@ -126,7 +126,7 @@ form {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: var(--primary);
+  background: black;
   cursor: pointer;
 }
 
@@ -134,7 +134,7 @@ form {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: #8300e9;
+  background: black;
   cursor: pointer;
 }
 
