@@ -4,6 +4,7 @@ const loanTerm = document.getElementById("loanterm");
 const termText = document.querySelector(".term-text");
 const termSlider = document.getElementById("termslider");
 const monthlyPaymentText = document.querySelector(".monthly-repayment");
+const dailyPaymentText = document.querySelector(".daily-repayment");
 
 function calculatePayment() {
   const principal = parseFloat(amountRequired.value) | 0;
@@ -18,10 +19,12 @@ function calculatePayment() {
     (principal * percentageRate) /
     (1 - Math.pow(1 + percentageRate, lengthOfLoan * -1));
   monthlyPayment = monthlyPayment.toFixed(2);
+  const dailyPayment = (monthlyPayment / 20).toFixed(2);
   if (isNaN(monthlyPayment)) {
     //document.getElementById("monthlyrepayment").innerHTML = "";
   } else {
     monthlyPaymentText.innerHTML = "£" + monthlyPayment;
+    dailyPaymentText.innerHTML = "£" + dailyPayment;
   }
   termText.innerHTML = "Loan Term: " + termSlider.value + " years";
 }
