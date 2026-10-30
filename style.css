@@ -22,6 +22,7 @@ body {
   gap: 10px;
   padding-bottom: 48px;
   padding-top: 48px;
+  border: 2px solid #e5e5e5;
 }
 
 h2 {
