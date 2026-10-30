@@ -182,7 +182,7 @@ form {
 }
 
 #spacer {
-  height: 48px;
+  min-height: 48px;
 }
 
 /* .form-select-input {
