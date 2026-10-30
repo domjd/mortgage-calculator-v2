@@ -20,8 +20,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding-bottom: 48px;
-  padding-top: 48px;
   border: 2px solid #e5e5e5;
 }
 
@@ -181,6 +179,10 @@ form {
 .sliderticks span {
   color: var(--darl);
   opacity: 0.6;
+}
+
+#spacer {
+  height: 48px;
 }
 
 /* .form-select-input {
