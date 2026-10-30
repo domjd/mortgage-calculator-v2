@@ -21,7 +21,6 @@ body {
   align-items: center;
   gap: 10px;
   border: 2px solid #e5e5e5;
-  padding-top: 48px;
 }
 
 h2 {
@@ -180,10 +179,6 @@ form {
 .sliderticks span {
   color: var(--darl);
   opacity: 0.6;
-}
-
-#spacer {
-  min-height: 48px;
 }
 
 /* .form-select-input {
